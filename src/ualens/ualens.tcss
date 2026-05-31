@@ -1,0 +1,166 @@
+/* The main content area (between Header and Footer) fills all remaining space */
+Screen > Horizontal {
+    height: 1fr;
+}
+
+AddressSpace {
+    border: round $primary-muted;
+    border-title-color: $primary;
+    padding: 0 1;
+    width: 30%;
+    min-width: 22;
+}
+
+AddressSpace:focus-within {
+    border: round $primary;
+}
+
+AddressSpace Tree {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+AttributeInspector {
+    border: round $primary-muted;
+    border-title-color: $primary;
+    height: 25%;
+    min-height: 6;
+    padding: 0 1;
+}
+
+AttributeInspector:focus-within {
+    border: round $primary;
+}
+
+DataTableView {
+    border: round $primary-muted;
+    border-title-color: $primary;
+    height: 37%;
+    min-height: 6;
+    padding: 0 1;
+}
+
+DataTableView:focus-within {
+    border: round $primary;
+}
+
+GraphView {
+    border: round $primary-muted;
+    border-title-color: $primary;
+    height: 38%;
+    min-height: 8;
+    padding: 0 1;
+}
+
+GraphView:focus-within {
+    border: round $primary;
+}
+
+GraphView PlotextPlot {
+    background: transparent;
+}
+
+GraphView #graph-hint {
+    content-align: center middle;
+    width: 100%;
+    height: 1fr;
+    color: $text-muted;
+}
+
+LogPane {
+    border: round $primary-muted;
+    border-title-color: $primary;
+    height: 20%;
+    min-height: 5;
+    padding: 0 1;
+    background: transparent;
+}
+
+LogPane:focus-within {
+    border: round $primary;
+}
+
+LogPane RichLog {
+    background: transparent;
+    /* Use 1fr so RichLog fills available space instead of a fixed 8-row height */
+    height: 1fr;
+}
+
+Header {
+    background: $background;
+    color: $primary;
+    height: 3;
+}
+
+Footer {
+    background: $background;
+}
+
+HeaderTitle {
+    content-align: left middle;
+    height: 100%;
+    padding-left: 3;
+}
+
+HeaderClock, HeaderClockSpace {
+    height: 100%;
+}
+
+HeaderIcon {
+    display: none;
+}
+
+ConnectionModal {
+    align: center middle;
+}
+
+#connection-dialog {
+    padding: 1 2;
+    background: $surface;
+    border: thick $primary;
+    width: 60;
+    height: auto;
+    outline: solid $primary-muted;
+}
+
+#dialog-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1;
+    color: $primary;
+    text-style: bold;
+}
+
+#favorites-select {
+    margin: 0 1 1 1;
+}
+
+#url-input, #username-input, #password-input {
+    margin: 0 1 1 1;
+}
+
+#anonymous-checkbox {
+    margin: 1;
+}
+
+.input-label {
+    margin: 1 1 0 1;
+    color: $text-muted;
+}
+
+#dialog-buttons-container {
+    width: 100%;
+    align: center middle;
+}
+
+#dialog-buttons {
+    width: auto;
+    height: 3;
+    align: center middle;
+}
+
+#dialog-buttons Button {
+    margin: 0 1;
+}
